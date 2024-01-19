@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Survey Form Exercicio</title>
+    <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body style="background-image: url(https://imgs.search.brave.com/V0AfmNPwixUenjwxgvxmTVHwlDPO2mu_y4e0TjElpAI/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAxLzkwLzQyLzQz/LzM2MF9GXzE5MDQy/NDMyMF9PbzRLaGdI/VVZySVd3SkJBcWlT/T3lkUnc1N3FhSGlK/Vy5qcGc); margin:auto">
+      <div class="form" style="background-color: rgb(233, 206, 170); width: 60%; margin: auto; padding: 20px; max-width: 1000px; margin-top: 70px; text-align: center; font-family: sans-serif;">
+      <h1 id="title">Legalização da Cannabis</h1>
+      <hr style="color: darkolivegreen; height: 2px; background-color: darkolivegreen; border: none;">
+      <p id="description" style="margin-bottom: 2px;">Vote a legalização nacional da Cannabis</p>
+      <form id="survey-form">
+        <fieldset style="border: none; padding: 2rem 0; border-bottom: 2px solid darkolivegreen;">
+          <label id="name-label" style="display: block; margin: 0.5rem 0;">Escreva seu nome completo:<input placeholder="Nome Nome de Nome" required id="name" type="text" style="display: block; padding-top: 1 auto; margin: 10px auto; width: 70%; min-height: 1.5em; padding-bottom: 1 auto;"/></label>
+          <label id="email-label" style="display: block; margin: 0.5rem 0;">Escreva seu email: <input placeholder="email@email.com" required id="email" type="email" style="display: block; padding-top: 1 auto; margin: 10px auto; width: 70%; min-height: 1.5em; padding-bottom: 1 auto;"/></label>
+          <label id="number-label" style="display: block; margin: 0.5rem 0;">Escreva sua idade (em números): <input placeholder="100" required type="number" id="number" min="18" max="65" style="display: block; padding-top: 1 auto; margin: 10px auto; width: 70%; min-height: 1.5em; padding-bottom: 1 auto;"/></label>
+          </fieldset>
+          <fieldset style="border: none; padding: 2rem 0; border-bottom: 2px solid darkolivegreen;">
+            <p id="cor-da-pele" style="display: block;">Qual sua cor?</p>
+            <label id="branco"><input value="1" class="cor-da-pele" id="branco" type="checkbox" style="width: unset; vertical-align: middle; margin: 0 0.em 0 0;"/>Branco</label>
+            <label id="pardo"><input value="2" class="cor-da-pele" id="pardo" type="checkbox" style="width: unset; vertical-align: middle; margin: 0 0.em 0 0;"/>Pardo</label>
+            <label id="indigena"><input value="3" class="cor-da-pele" id="indigena" type="checkbox" style="width: unset; vertical-align: middle; margin: 0 0.em 0 0;"/>Indígena</label>
+            <label id="negro"><input value="4" class="cor-da-pele" id="negro" type="checkbox" style="width: unset; vertical-align: middle; margin: 0 0.em 0 0;"/>Negro</label>
+            <label id="outro"><input value="5" class="cor-da-pele" id="outro" type="checkbox" style="width: unset; vertical-align: middle; margin: 0 0.em 0 0;"/>Outro</label>
+            <hr style="color: darkolivegreen; height: 2px; background-color: darkolivegreen; border: none;">
+            <p id="renda" style="display: block;" >Qual sua renda bruta?</p>
+            <label id="menos-minimo"><input value="1" class="renda" id="menos-minimo" type="checkbox" />Menos que um salário mínimo</label>
+            <label id="minimo"><input value="2" class="renda" id="minimo" type="checkbox" style="width: unset; vertical-align: middle; margin: 0 0.em 0 0;"/>De 1 a 2 salários mínimos</label>
+            <label id="mais-minimo"><input value="3" class="renda" id="mais-minimo" type="checkbox" style="width: unset; vertical-align: middle; margin: 0 0.em 0 0;"/>De 2 a 5 salários mínimos</label>
+            <label id="5-minimo"><input value="4" class="renda" id="5-minimo" type="checkbox" style="width: unset; vertical-align: middle; margin: 0 0.em 0 0;"/>De 5 a 10 salários mínimos</label>
+            <label id="mais-10"><input value="5" class="renda" id="mais-10" type="checkbox" style="width: unset; vertical-align: middle; margin: 0 0.em 0 0;"/>Mais que 10 salários mínimos</label>
+            </fieldset>
+          <fieldset style="border: none; padding: 2rem 0; border-bottom: 2px solid darkolivegreen;">
+            <p id="contra-ou-a-favor">Você é a favor da legalização da Cannabis?</p>
+            <label id="sim">Sim <input id="sim" type="radio" value="1" name="votacao"/></label>
+            <label id="nao">Não <input id="nao" type="radio" value="2" name="votacao"/></label>
+            </fieldset>
+          <fieldset id="dropdown" style="border: none; padding: 2rem 0; border-bottom: 2px solid darkolivegreen;">
+            <label id="dropdown">Se votou "Sim", justifique:</label>
+            <select id="dropdown" style="display: block; margin: 0 auto;">
+              <option value="">(Escolha uma)</option>
+              <option value="1">Sou a favor da liberdade</option>
+              <option value="2">Sou contra o racismo</option>
+              <option value="3">Tenho bom senso</option>
+              </select>
+            <label id="dropdown">Se votou "Não", justifique:<select style="display: block; margin: 0 auto;" id="dropdown">
+              <option value="">(Escolha uma)</option>
+              <option value="1">Sou racista</option>
+              <option value="2">Odeio pobres</option>
+              <option value="3">Sou fiscal da vida alheia</option>
+              </select>
+              </label>
+            </fieldset>
+            <fieldset style="border: none; padding: 2rem 0;">
+              <label for="bio">Justifique por escrito:
+          <textarea style="display: block; margin: 0 auto; width: auto;" id="justifique" name="bio" rows="3" cols="30" placeholder="Eu sou a favor da legalização porque..."></textarea>
+        </label>
+              </fieldset>
+              <label id="comfirmacao"><input required value="0" type="checkbox" id="confirmacao"> Eu confirmo minha votação</label>
+            <input style="background-color: forestgreen; border-color: darkolivegreen; width: 150px; display: block; margin: 0 auto; margin-top: 20px;" id="submit" type="submit" />
+        </form>
+        </div>
+      </body>
+  </html>
