@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Documentação Técnica</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1>Gabriel D'angelo</h1>
+        <ul class="header-ul">
+            <a href="https://github.com/gxbxD" target="_blank">
+                <img src="https://1000logos.net/wp-content/uploads/2021/05/GitHub-logo-500x281.png" width="80px"
+                    height="40px" />
+            </a>
+            <a href="https://www.linkedin.com/in/gabriel-d-angelo-7152b9176/" target="-blank">
+                <img src="https://logodownload.org/wp-content/uploads/2019/03/linkedin-logo.png" width="105px"
+                    height="25px" />
+            </a>
+        </ul>
+    </header>
+    <div class="organizer">
+        <div class="nofooter">
+    <div class="navbar">
+        <nav id="navbar">
+            <header>
+                <h2>O que é Angular?</h2>
+            </header>
+            <div>
+            <h3><a class="nav-link" href="#O_que_e_Angular">O que é Angular</a></h3>
+            </div>
+            <div>
+            <h3><a class="nav-link" href="#Pre_requisitos">Pré-requisitos</a></h3>
+            </div>
+            <div>
+            <h3><a class="nav-link" href="#Componentes">Componentes</a></h3>
+            </div>
+            <div>
+            <h3><a class="nav-link" href="#Comportamento">Comportamento</a></h3>
+            </div>
+            <div>
+            <h3><a class="nav-link" href="#Diretivas">Diretivas</a></h3>
+            </div>
+            <div>
+            <h3><a class="nav-link" href="#Servicos">Serviços</a></h3>
+            </div>
+            <div>
+            <h3><a class="nav-link" href="#Organizacao">Organização</a></h3>
+            </div>
+            <div>
+            <h3><a class="nav-link" href="#CLI">Interface de Linha de Comando (CLI)</a></h3>
+            </div>
+            <div>
+            <h3><a class="nav-link" href="#Bibliotecas_Primarias">Bibliotecas Primárias</a></h3>
+            </div>
+            <div>
+            <h3><a class="nav-link" href="#Proximos_passos">Próximos passos</a></h3>
+            </div>
+        </nav>
+        </div>
+        <div class="main-content">
+    <main id="main-doc">
+        <section id="O_que_e_Angular" class="main-section">
+            <header>
+                <h1>O que é Angular?</h1> </header>
+                <p>Angular é uma plataforma de desenvolvimento, construída sobre
+                    <a href="https://www.typescriptlang.org/">TypeScript.</a>
+                </p>
+                <p>Como plataforma, o Angular inclui:</p>
+                <ul>
+                    <li><a>Uma estrutura baseada em componentes para a criação de aplicações web escaláveis</a></li>
+                    <li><a>Uma coleção de bibliotecas bem integradas que cobrem uma ampla variedade de recursos,
+                            incluindo roteamento, gerenciamento de formulários, comunicação cliente-servidor e muito
+                            mais</a></li>
+                    <li><a>Um conjunto de ferramentas de desenvolvedor para ajudá-lo a desenvolver, criar, testar e
+                            atualizar seu código</a></li>
+                </ul>
+                <p>Com o Angular, você está aproveitando uma plataforma que pode ser dimensionada de projetos de
+                    desenvolvedor único para aplicativos de nível corporativo. O melhor de tudo é que o ecossistema
+                    Angular consiste em um grupo diversificado de mais de 1,7 milhão de desenvolvedores, autores de
+                    bibliotecas e criadores de conteúdo.</p>
+        </section>
+        <section id="Pre_requisitos" class="main-section">
+            <header>
+                <h2>Pré-requisitos</h2>
+            </header>
+            <p>Como a maioria dos frameworks modernos, o Angular espera que você esteja familiarizado com HTML, CSS e
+                JavaScript. Além disso, recomenda-se ter familiaridade com os seguintes conceitos e ferramentas:</p>
+            <h3>Conceitos</h3>
+            <ul>
+                <li><a><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes">Aulas
+                            JavaScript</a></a></li>
+                <li><a><a href="https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html">Aulas
+                            TypeScript</a></a></li>
+                <li><a><a href="https://www.typescriptlang.org/docs/handbook/decorators.html">Decoradores
+                            TypeScript</a></a></li>
+            </ul>
+            <h3>Ferramentas</h3>
+            <ul>
+                <li><a><em>TypeScript</em> isso é enviado por padrão com todos os aplicativos Angular para fornecer
+                        ferramentas aprimoradas e manutenção aprimorada para uma melhor experiência do
+                        desenvolvedor.</a></li>
+                <li><a><em>Interface de Linha de Comando (CLI)</em> O Angular usa um compilador para abstrair a
+                        complexidade das ferramentas e otimizar seu código para que você possa se concentrar na criação
+                        de seu aplicativo.</a></li>
+            </ul>
+        </section>
+        <section id="Componentes" class="main-section">
+            <header>
+                <h2>Componentes</h2>
+            </header>
+            <p>Componentes são o bloco de construção fundamental para a criação de aplicações em Angular. Ao alavancar a
+                arquitetura de componentes, o Angular visa fornecer estrutura para organizar seu projeto em partes
+                gerenciáveis e bem organizadas com responsabilidades claras, para que seu código seja sustentável e
+                escalável.</p>
+            <p>Um componente angular pode ser identificado pelo sufixo <code>component</code> (por exemplo.,
+                <code>my-custom-name.component.ts</code> e tem o seguinte:
+            </p>
+            <ul>
+                <li><a>Um decorador para definir opções de configuração para coisas como:</a></li>
+                <ul>
+                    <li><a>Um seletor que define qual é o nome da tag ao referir um componente em um modelo</a></li>
+                    <li><a>Um modelo HTML que controla o que é renderizado no navegador</a></li>
+                </ul>
+                <li><a>Uma classe TypeScript que define o comportamento do componente. Exemplos incluem manipulação de
+                        entrada do usuário, gerenciamento de estado, definição de métodos, etc.</a></li>
+                <p>Aqui está um exemplo simplificado de um componente TodoListItem.</p>
+            </ul>
+            <pre>
+  <code>
+  // 📄 todo-list-item.component.ts
+@Component({
+  standalone: true,
+  selector: 'todo-list-item',
+  template: ` &lt;li&gt;(TODO) Read cup of coffee introduction&lt;/li&gt; `,
+  styles: ['li { color: papayawhip; }'],
+})
+export class TodoListItem {
+  /* Component behavior is defined in here */
+}
+</code>
+</pre>
+        </section>
+        <section id="Comportamento" class="main-section">
+            <header>
+                Comportamento
+            </header>
+            <p>Agora que temos a estrutura básica para o componente, deixe-os aprender mais sobre como você define o
+                comportamento do componente.</p>
+            <h3>Estado</h3>
+            <p>Ao definir os dados que você deseja que o componente gerencie, isso pode ser feito declarando-os
+                definindo
+                <a href="https://www.typescriptlang.org/docs/handbook/2/classes.html#fields">campos de classe</a>.
+            </p>
+            <p>No exemplo de um <code>todo-list-item.component.ts</code>, há duas propriedades que queremos rastrear:
+                <code>taskTitle</code> e <code>isComplete</code>. Usando o
+                <a href="https://www.typescriptlang.org/docs/handbook/2/classes.html#fields">sintaxe do campo de
+                    classe</a>
+                , eles podem ser definidos da seguinte forma:
+            </p>
+            <pre>
+  <code>
+    // 📄 todo-list-item.component.ts
+@Component({ ... })
+export class TodoList {
+  taskTitle = '';
+  isComplete = false;
+}
+  </code>
+</pre>
+            <h3>Métodos</h3>
+            Você pode definir funções para um componente declarando métodos dentro da classe de componente.
+            <pre>
+    <code>
+      // 📄 todo-list-item.component.ts
+@Component({ ... })
+export class TodoList {
+  taskTitle = '';
+  isComplete = false;
+
+  updateTitle(newTitle: string) {
+    this.taskTitle = newTitle;
+  }
+
+  completeTask() {
+    this.isComplete = true;
+  }
+}
+    </code>
+  </pre>
+            <h3>Modelos</h3>
+            <p>Cada componente tem um modelo HTML que define o que esse componente renderiza para o DOM.</p>
+            <p>Modelos HTML podem ser definidos como um modelo inline dentro da classe TypeScript, ou em arquivos
+                separados com o <code>templateUrl</code> propriedade. Para saber mais, confira <a
+                    href="https://angular.io/guide/component-overview#defining-a-components-template">os documentos
+                    sobre a definição de modelos de componentes.</a></p>
+            <p>Dentro deste documento, os exemplos usarão modelos em linha para trechos de código mais concisos.</p>
+            <h4>Renderização de Dados Dinâmicos</h4>
+            <p>Quando você precisa exibir conteúdo dinâmico em seu modelo, o Angular usa a sintaxe de cinta dupla para
+                distinguir entre conteúdo estático e dinâmico.</p>
+            <pre>
+      <code>
+        @Component({
+  template: ` &lt;p&gt;Title: {{ taskTitle }}&lt;/p&gt; `,
+})
+export class TodoListItem {
+  taskTitle = 'Read cup of coffee';
+}
+      </code>
+      </pre>
+            <p>É assim que ele é renderizado na página.</p>
+            <pre>
+        <code><p>Title: Read cup of coffee</p></code>
+      </pre>
+            <p>Esta sintaxe declara um interpolação entre a propriedade de dados dinâmicos dentro do HTML. Como
+                resultado, sempre que os dados forem alterados, o Angular atualizará automaticamente o DOM refletindo o
+                novo valor da propriedade.</p>
+            <h4>Propriedades e Atributos Dinâmicos</h4>
+            <p>Quando você precisa definir dinamicamente o valor dos atributos em um elemento HTML, a propriedade de
+                destino é envolvida entre colchetes. Isso liga o atributo com os dados dinâmicos desejados, informando
+                ao Angular que o valor declarado deve ser interpretado como uma instrução semelhante ao JavaScript (<a
+                    href="https://angular.io/guide/understanding-template-expr-overview">com alguns aprimoramentos
+                    angulares</a>) em vez de uma string simples.</p>
+            <pre>
+       <code>
+         &lt;button [disabled]="hasPendingChanges"&gt;&lt;/button&gt;
+       </code>
+     </pre>
+            <p>Neste exemplo, a propriedade desabilitada está vinculada ao hasPendingChanges variável que Angular
+                esperaria encontrar dentro do estado componentilit.</p>
+            <h4>Manuseio de Eventos</h4>
+            <p>Você pode vincular ouvintes de eventos especificando o nome do evento entre parênteses e invocando um
+                método no lado direito do sinal de igual:</p>
+            <pre>
+         <code>
+           &lt;button (click)="saveChanges()"&gt;Save Changes&lt;/button&gt;
+         </code>
+       </pre>
+            <p>Se você precisar passar o objeto de evento para o seu ouvinte de eventos, o Angular fornece um implícito
+                <code>$event</code> variável que pode ser usada dentro da chamada de função:</p>
+         <pre>
+           <code>
+             &lt;button (click)="saveChanges($event)"&gt;Save Changes&lt;/button&gt;
+           </code>
+                </pre>
+            <h3>Estilos</h3>
+            <p>Quando você precisa estilizar um componente, há duas propriedades opcionais que você pode configurar
+                dentro do decorador.<code>@Component</code></p>
+            <p>Semelhante aos modelos de componentes, você pode gerenciar os estilos de um componente no mesmo arquivo
+                da classe <em>TypeScript<em> ou em arquivos separados com o <code>styleUrls</code> propriedades.</p>
+            <p>Os componentes podem opcionalmente incluir uma lista de estilos CSS que se aplicam ao DOM desse
+                componente:</p>
+            <pre>
+             <code>
+               @Component({
+  selector: 'profile-pic',
+  template: `&lt;img src="profile-photo.jpg" alt="Your profile photo" /&gt;`,
+  styles: [
+    `
+      img {
+        border-radius: 50%;
+      }
+    `,
+  ],
+})
+export class ProfilePic {
+  /* Your code goes here */
+}
+               </code></pre>
+            <p>Por padrão, o estilo de um componente só se aplicará aos elementos no modelo desse componente para
+                limitar os efeitos colaterais.</p>
+            <p>Para saber mais, confira <a href="https://angular.io/guide/component-styles">os documentos sobre o estilo
+                    de componentes</a>.</p>
+        </section>
+        <section id="Diretivas" class="main-section">
+            <header>
+                <h2>Diretivas</h2>
+            </header>
+            <p>Ao criar aplicativos, os desenvolvedores geralmente precisam estender o comportamento de um elemento HTML
+                ou de diretivas/componentes angulares. Exemplos disso incluem: exibir conteúdo com base em uma
+                determinada condição, renderizar uma lista de itens com base nos dados do aplicativo, alterar os estilos
+                em um elemento com base na interação do usuário, etc.</p>
+            <p>Para resolver esse problema, o Angular usa o conceito de diretivas, que permitem adicionar novos
+                comportamentos a um elemento de maneira declarativa e reutilizável.</p>
+            <h3>Renderização condicional</h3>
+            <p>Um dos cenários mais comuns que os desenvolvedores encontram é o desejo de mostrar ou ocultar conteúdo em
+                modelos com base em uma condição.</p>
+            <p>Semelhante ao JavaScript <code>if</code> bloco de controle, Angular fornece um built-in <code>ngIf</code>
+                diretiva para controlar se um elemento será renderizado se a expressão retornar um valor verdadeiro.</p>
+            <pre>
+                <code>
+                  &lt;section class="admin-controls" *ngIf="hasAdminPrivileges"&gt;
+  The content you are looking for is here.
+
+                </code>
+              </pre>
+            <p>Se <code>hasAdminPrivileges</code> é True, o aplicativo irá exibir o conteúdo para o usuário, caso
+                contrário, o elemento é removido do DOM inteiramente.</p>
+            <h3>Renderizar uma lista</h3>
+            <p>Outro cenário comum é renderizar uma lista de itens com base em dados dinâmicos.</p>
+            <p>Semelhante a JavaScript <code>for</code> loop, Angular fornece outra diretiva interna chamada
+                <code>ngFor</code>, o seguinte código irá renderizar um <code>&lt;li&gt;</code> elemento para cada item
+                em <code>taskList</code>.
+            </p>
+            <pre>
+                  <code>
+                    &lt;ul class="ingredient-list"&gt;
+  &lt;li *ngFor="let task of taskList"&gt;d{{ task }}&lt;/li&gt;
+</ul>
+                  </code>
+                </pre>
+            <h3>Diretivas personalizadas</h3>
+            <p>Embora as diretivas incorporadas ajudem a resolver problemas comuns que os desenvolvedores encontram, há
+                situações em que os desenvolvedores exigem um comportamento personalizado específico para sua aplicação.
+                Nesses casos, o Angular fornece uma maneira de criar diretivas personalizadas.</p>
+            <p>Diretivas angulares personalizadas podem ser identificadas pelo <code>directive</code> sufixo (por
+                exemplo., <code>my-custom-name.directive.ts</code>).</p>
+            <p>Semelhante à definição de um componente, as diretivas são compostas do seguinte:</p>
+            <ul>
+                <li><a>Um decorador TypeScript para definir opções de configuração para coisas como:</a></li>
+                <ul>
+                    <li><a>Um seletor que define o nome da tag é quando o componente é chamado</a></li>
+                </ul>
+                <li><a>Uma classe TypeScript que define o comportamento estendido que a diretiva adicionará ao
+                        respectivo elemento HTML.</a></li>
+            </ul>
+            <p>Por exemplo, aqui está uma diretiva personalizada para destacar um elemento:</p>
+            <pre>
+                      <code>
+                      @Directive({
+  selector: '[appHighlight]',
+})
+export class HighlightDirective {
+  private el = inject(ElementRef);
+  constructor() {
+    this.el.nativeElement.style.backgroundColor = 'yellow';
+  }
+}
+</code>
+                    </pre>
+            </p>Para aplicar isso a um elemento, a diretiva é chamada adicionando-o como um atributo.</p>
+            <pre>
+  <code>
+    &lt;p appHighlight&gt;Look at me!&lt;/p&gt;
+    </code>
+</pre>
+            <p>As diretivas também podem aproveitar os eventos do usuário, receber informações para personalização
+                adicional, mas isso vai além do escopo deste artigo. Para saber mais, confira <a
+                    href="https://angular.io/guide/attribute-directives">os documentos sobre a criação de diretivas
+                    personalizadas</a>.</p>
+        </section>
+        <section id="Servicos" class="main-section">
+            <header>
+                <h2>Serviços</h2>
+            </header>
+            <p>Quando você precisa compartilhar a lógica entre componentes, o Angular permite que você crie um “service”
+                que permite injetar código em componentes enquanto o gerencia a partir de uma única fonte de verdade.
+            </p>
+            <p>Os serviços angulares podem ser identificados pelo <code>service</code> sufixo (por exemplo.,
+                <code>my-custom-name.service.ts</code>).
+            </p>
+            <p>Semelhante à definição de um componente, os serviços são compostos do seguinte:
+            </p>
+            <ul>
+                <li><a>Um decorador TypeScript para definir opções de configuração para coisas como:</a></li>
+            </ul>
+                    <li><a><code><a href="https://angular.io/api/core/Injectable#providedIn">providedIn</a></code>- Isso permite que você defina quais partes do aplicativo podem acessar o serviço. Por exemplo, ‘root’ permitirá que um serviço seja acessado em qualquer lugar dentro do aplicativo.</a></li>
+    </ul>
+    <li><a>Uma classe TypeScript que define o código desejado que será acessível quando o serviço for injetado</a></li>
+  </ul>
+  <p>Aqui está um exemplo de a <code>Calculator</code> serviço.</p>
+                            <pre>
+    <code>
+      import {Injectable} from '@angular/core';
+
+@Injectable({
+  providedIn: 'root',
+})
+class CalculatorService {
+  add(x: number, y: number) {
+    return x + y;
+  }
+}
+</code>
+  </pre>
+                            <p>Se quiséssemos chamar o serviço em um componente de Recibo, por exemplo, aqui está o que
+                                poderia parecer:</p>
+                            <pre>
+      <code>
+        import { Component } from '@angular/core';
+import { CalculatorService } from './calculator.service';
+
+@Component({
+  selector: 'app-receipt',
+  template: `&lt;h1&gt;The total is {{ totalCost }}&lt;/h1&gt;`,
+})
+export class Receipt {
+  private calculatorService = inject(CalculatorService);
+  totalCost = this.calculatorService.add(50, 25);
+}
+</code>
+    </pre>
+                            <p>Neste exemplo, o <code>CalculatorService</code> está sendo usado chamando a função
+                                angular <code>inject</code> e passando o serviço para ele.</p>
+        </section>
+        <section id="Organizacao" class="main-section">
+            <header>
+                <h2>Organização</h2>
+            </header>
+            <p>Componentes autônomos são um novo padrão organizacional que foram introduzidos no Angular v15 e é o local
+                recomendado para começar. Em contraste com <a href="https://angular.io/guide/ngmodules">NgMódulos</a>,
+                permite que os desenvolvedores organizem código e gerenciem dependências por meio de componentes, em vez
+                de módulos de recursos.</p>
+            <p>Por exemplo, no padrão NgModule tradicional, você precisaria criar um TodoModule e gerenciar todas as
+                suas dependências através deste módulo.</p>
+            <pre>
+                <code>
+                  import {NgModule} from '@angular/core';
+import {FormsModule} from '@angular/forms';
+import {TodoList} from '../todo/todo-list.component';
+
+@NgModule({
+  declarations: [TodoList],
+  imports: [FormsModule],
+  exports: [TodoList, FormsModule],
+})
+export class TodoModule {}
+</code>
+</pre>
+                  <p>No entanto, agora você pode conseguir algo semelhante com um componente independente sem a necessidade de um arquivo de módulo:</p>
+                  <pre>
+                    <code>
+                      import {FormsModule} from '@angular/forms';
+import {TodoList} from '../todo/todo-list.component';
+
+@Component({
+  standalone: true,
+  selector: 'todo-app',
+  imports: [FormsModule, TodoList],
+  template: ` ... &lt;todo-list [tasks]="taskList"&gt;&lt;/todo-list&gt; `,
+})
+export class PhotoGalleryComponent {
+  // component logic
+}
+</code>
+                  </pre>
+            <p>Embora a maior parte disso deva ser familiar (da seção Componentes), duas coisas que são exclusivas para
+                esse novo padrão são <doe>standalone</code> bandeira e o <code>imports</code> chave.</p>
+            <ul>
+                <li><a><code>standalone</code> - Quando fornecido o valor <code>true</code>, isso diz ao Angular que o
+                        componente não precisa ser declarado em um NgModule</a></li>
+                <li><a><code>imports</code>- Permite que os desenvolvedores declarem quais dependências serão usadas no
+                        componente</a></li>
+            </ul>
+            <p>Em outras palavras, em vez de ter que definir um contexto específico no qual o código deve ser
+                organizado, os desenvolvedores são capazes de especificar as dependências diretamente dentro do próprio
+                contexto do componente.</p>
+        </section>
+        <section id="CLI" class="main-section">
+            <header>
+                <h2>Interface de Linha de Comando (CLI)</h2>
+            </header>
+            <p>O Angular CLI é a maneira recomendada para desenvolver aplicações Angular e pode fazer algumas tarefas
+                sem problemas.</p>
+            <p>Alguns exemplos de comandos comuns de CLI angular incluem:</p>
+            <div class="tabelas">
+                <div class="descricao">
+                    <p>COMANDO</p>
+                    <p>DETALHES</p>
+                </div>
+                <div class="coluna">
+                <div class="colveresq">
+                    <p><a href="https://angular.io/cli/build">ng construir</a></p>
+                    <p><a href="https://angular.io/cli/serve">ng servir</a></p>
+                    <p><a href="https://angular.io/cli/generate">ng gerar</a></p>
+                    <p><a href="https://angular.io/cli/test">teste do ng</a></p>
+                    <p><a href="https://angular.io/cli/e2e">ng e2e</a></p>
+                </div>
+                <div class="colverdir">
+                    <p>Compila uma aplicação Angular em um diretório de saída.</p>
+                    <p>Cria e serve o seu aplicativo, reconstruindo alterações no arquivo.</p>
+                    <p>Gera ou modifica arquivos com base em um esquema.</p>
+                    <p>Executa testes unitários em um determinado projeto.</p>
+                    <p>Cria e serve uma aplicação Angular e, em seguida, executa testes de ponta a ponta.</p>
+                </div>
+                </div>
+            </div>
+            <p>Para obter mais informações sobre a CLI angular, consulte o <a href="https://angular.io/cli">Referência
+                    Angular CLI seção</a>.</p>
+        </section>
+        <section id="Bibliotecas_Primarias" class="main-section">
+            <header>
+                <h2>Bibliotecas primárias
+                </h2>
+            </header>
+            <p>O Angular fornece muitas bibliotecas primárias para suportar funcionalidades comuns que os
+                desenvolvedores geralmente encontram ao criar seus aplicativos.</p>
+            <p>Algumas das bibliotecas populares disponíveis no ecossistema incluem:</p>
+            <div class="tabelas">
+                <div class="descricao">
+                    <p>BIBLIOTECA</p>
+                    <p>DETALHES</p>
+                </div>
+                <div class="coluna">
+                <div class="colveresq">
+                    <p><a href="https://angular.io/guide/router">Roteador Angular</a></p>
+                    <p><a href="https://angular.io/guide/forms-overview">Formulários Angulares</a></p>
+                    <p><a href="https://angular.io/guide/understanding-communicating-with-http">HttpClient Angular</a>
+                    </p>
+                    <p><a href="https://angular.io/guide/animations">Animações Angulares</a></p>
+                    <p><a href="https://angular.io/guide/service-worker-intro">PWA Angular</a></p>
+                    <p><a href="https://angular.io/guide/schematics">Esquemas Angulares</a></p>
+                </div>
+                <div class="colverdir">
+                    <p>Navegação e roteamento avançados do lado do cliente com base em componentes angulares. Suporta
+                        carregamento lento, rotas aninhadas, correspondência de caminho personalizado e muito mais.</p>
+                    <p>Sistema uniforme para participação e validação de formulários.</p>
+                    <p>Cliente HTTP robusto que pode alimentar uma comunicação cliente-servidor mais avançada.</p>
+                    <p>Sistema rico para animações de condução com base no estado da aplicação.</p>
+                    <p>Ferramentas para a criação de Progressive Web Applications (PWA), incluindo um service worker e
+                        um manifesto de aplicativo da Web.</p>
+                    <p>Ferramentas automatizadas de andaimes, refatoração e atualização que simplificam o
+                        desenvolvimento em larga escala.</p>
+                </div>
+                </div>
+            </div>
+        </section>
+        <section id="Proximos_passos" class="main-section">
+            <header>
+                <h2>Próximos passos</h2>
+            </header>
+            <p>Para ver Angular em ação, veja o <a href="https://angular.io/start">Começando</a> tutorial. Este tutorial
+                usa
+                <a href="https://stackblitz.com/">stackblitz.com</a>
+                , para você explorar um exemplo de trabalho do Angular sem quaisquer requisitos de instalação.
+            </p>
+            <p>Se você estiver interessado em aprender mais sobre como criar aplicativos com o Angular, confira os
+                seguintes recursos:</p>
+            <ul>
+                <li><a><a href="https://angular.io/tutorial/first-app">Tutoriais</a></a></li>
+                <li><a><a href="https://angular.io/guide/developer-guide-overview">Guias Profundos</a></a></li>
+            </ul>
+        </section>
+    </main>
+    </div>
+    </div>
+    <div class="pqp">
+        <div class="footer">
+            <footer>
+                Esta página serve apenas para fins de estudos, para informações relevantes visite a <a
+                    href="https://angular.io/guide/what-is-angular#what-is-angular">Documentação Oficial.</a>
+                    Todo conteúdo deste site foi traduzido da <a href="https://angular.io/">Página Oficial</a>.
+            </footer>
+            </div>
+    </div>
+</div>
+    <body>
+
+</html>
